@@ -30,7 +30,6 @@ const Footer = props => {
         <b className="hidden-xs-down">{t("Core Version")}: </b>
         <b className="hidden-sm-up">C: </b> <span id="piholeVersion">vDev</span>
         <b className="hidden-xs-down">, {t("Web Version")}: </b>
-        <b className="hidden-sm-up">, W: </b> <span id="webVersion">vDev</span>
       </div>
     </footer>
   );
