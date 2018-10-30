@@ -1,21 +1,18 @@
 import React from 'react';
 import { translate } from "react-i18next";
 
-const FooterUpdateStatus = (props) => {
-    const { t } = props;
-    const updateAvailable = false;
+const FooterVersion = ({t, updates}) => {
     
-    if(updateAvailable){
+    if(updates){
         return(
             <div className="ml-auto">
                 <a href="">Update Available</a>
             </div>
         );
-
     }else{
         return null;
     }
-    
 }
 
-export default translate(["common", "footer"])(FooterUpdateStatus);
+
+export default translate(["common", "footer"])(FooterVersion);
